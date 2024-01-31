@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Applicant {
@@ -19,4 +18,10 @@ public class Applicant {
     private String emailId;
     private String phoneNumber;
 
+
+    public Applicant(String applicantName, String emailId, String phoneNumber) {
+        this.applicantName = applicantName;
+        this.emailId = emailId;
+        this.phoneNumber = phoneNumber;
+    }
 }
