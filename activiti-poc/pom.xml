@@ -48,13 +48,20 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- Activiti dependencies for BPMN -->
-		<!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring-boot-starter -->
+		<!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring-boot-starter-basic -->
 		<dependency>
 			<groupId>org.activiti</groupId>
-			<artifactId>activiti-spring-boot-starter</artifactId>
-			<version>7.1.0.M6</version>
+			<artifactId>activiti-spring-boot-starter-basic</artifactId>
+			<version>6.0.0</version>
 		</dependency>
 
+
+		<!-- In-memory database added for convenience-->
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
